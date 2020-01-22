@@ -85,19 +85,19 @@ def hasVowel(word):
     return "stub"
 
 
-def isNumber(item):
+def isPhoneNumber(digits):
     '''
-    - Return True if item is of type int or type float, otherwise return
-    False.
-    - You can check if item is an int with type(item) == int, and a float
-    with type(item) == float
+    - Jill asked for Jack's phone number. She wants to write a function to check if the number is a real phone number.
+    - Returns True if digits is of type int and is nine numbers long.
+    - Hint 1: You can check if digits is an int with type(digits) == int
+    - Hint 2: To check the length of digits, you must convert it to a string first with str(digits).
     '''
     return "stub"
 
 
 def onlyContainsStrings(theList):
     '''
-    - Returns True if theList is a list containing only strings.
+    -Returns True if theList is a list containing only strings.
     - The parameter theList can be anything.
     - An empty list should return False since it doesn't contain a string.
     - If theList is not a list type, return False since theList is not a list
@@ -242,23 +242,23 @@ def test_hasVowel_5():
     assert hasVowel("frEE") == True
 
 ####################
-from lab03 import isNumber
+from lab03 import isPhoneNumber
 
-# Tests for isNumber
-def test_isNumber_1():
-    assert isNumber("1") == False
+# Tests for isPhoneNumber
+def test_isPhoneNumber_1():
+    assert isPhoneNumber("1234") == False
 
-def test_isNumber_2():
-    assert isNumber(-1) == True
+def test_isPhoneNumber_2():
+    assert isPhoneNumber(8051112222) == True
 
-def test_isNumber_3():
-    assert isNumber(True) == False
+def test_isPhoneNumber_3():
+    assert isPhoneNumber(1234) == False
 
-def test_isNumber_4():
-    assert isNumber(3.14) == True
+def test_isPhoneNumber_4():
+    assert isPhoneNumber(3.14) == False
 
-def test_isNumber_5():
-    assert isNumber([0]) == False
+def test_isPhoneNumber_5():
+    assert isPhoneNumber([0]) == False
 
 ####################
 from lab03 import onlyContainsStrings
