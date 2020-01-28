@@ -33,6 +33,7 @@ You will complete the portions in the starter code by doing the following:
    * Then, before you move on to the next function definition and <em>its</em> tests, get all of the tests from the one you just copied to pass.
    * Then, and only then, copy the next function definition and its tests into your files.
    * Repeat this until you have ALL of the function definitions and their tests, and all of them pass.
+5.  In order to run your test cases, you need to create a new tab in terminal using `COMMAND-T`. Once you are in a new tab, you can test your functions with the command `python3 -m pytest {{page.num}}_tests.py` after the `$`.
 
 You are encouraged to try submitting to Gradescope periodically for several reasons:
 
